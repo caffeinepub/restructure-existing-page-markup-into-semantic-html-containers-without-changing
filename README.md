@@ -1,2 +1,3 @@
-# restructure-existing-page-markup-into-semantic-html-containers-without-changing
-Exported from Caffeine project: Restructure existing page markup into semantic HTML containers without changing content
+## Restructure existing page markup into semantic HTML containers without changing content
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

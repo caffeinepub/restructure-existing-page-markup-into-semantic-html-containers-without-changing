@@ -1,0 +1,7 @@
+{
+  "frontend/src/App.tsx": "Main application component demonstrating proper semantic HTML5 structure with header, main, and footer elements organized in a flex layout. Includes proper attribution footer with dynamic year and UTM tracking.",
+  "frontend/src/backend.d.ts": "TypeScript type definitions for the backend canister interface, including Option types and the empty backendInterface.",
+  "frontend/src/config.ts": "Configuration module that loads environment settings from env.json and creates backend actor instances with proper canister ID and host configuration.",
+  "frontend/src/index.css": "Global stylesheet with Tailwind directives and OKLCH-based design tokens for light and dark modes, including color variables for all UI components.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks module for managing backend data fetching and state, currently containing an example query hook template."
+}

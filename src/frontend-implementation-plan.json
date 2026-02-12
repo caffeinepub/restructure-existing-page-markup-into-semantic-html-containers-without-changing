@@ -1,0 +1,25 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Semantic HTML5 container refactor (no content changes)",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Wrap the existing rendered page content in HTML5 semantic containers (<header>, <main>, <footer>) without changing any content, attributes, styling, behavior, or order.",
+      "acceptanceCriteria": [
+        "The resulting markup includes <header>, <main>, and <footer> elements and uses additional semantic elements where appropriate (e.g., <nav>, <section>, <article>, <aside>) without changing the content.",
+        "All user-visible text remains identical (no edits, no rewording, no additions/removals).",
+        "All existing attributes (including id, class, data-*, aria-*), links/URLs, form fields, and inline styles (if any) are preserved exactly.",
+        "All existing scripts and functional hooks (event handlers, element IDs used by JS, form names) continue to work identically after the restructure.",
+        "Content order remains the same as before; changes are limited to adding/moving semantic wrapper containers and grouping elements semantically."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Restructure the existing <body> markup to include semantic <header>, <main>, and <footer> containers while preserving the current content exactly (including the existing root mount node, script tag, all attributes, and relative order). Only add semantic wrapper elements and move the existing root element into <main> without modifying any text, links, or behavior."
+        }
+      ]
+    }
+  ]
+}

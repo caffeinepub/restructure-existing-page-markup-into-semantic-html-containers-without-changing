@@ -1,0 +1,15 @@
+{
+  "backend/main.mo": "Empty Motoko canister actor placeholder.",
+  "feature_evidence.json": "Describes a feature evidence report for refactoring markup into semantic HTML, listing affected files and components.",
+  "frontend-file-summaries.txt": "Contains prewritten summaries for key frontend source files and hooks.",
+  "frontend/index.css": "Tailwind base styles and OKLCH CSS variables defining light/dark theme tokens.",
+  "frontend/index.html": "Root HTML document mounting the React app via a root div and script module.",
+  "frontend/src/App.tsx": "React component rendering a semantic layout with header, main content section, and footer.",
+  "frontend/src/hooks/useActor.ts": "React Query hook that creates and manages backend actors tied to Internet Identity changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides React context and hooks for authenticating with Internet Identity and managing identity state.",
+  "frontend/src/hooks/useQueries.ts": "Example React Query hook wired to the actor for backend requests.",
+  "frontend/src/index.css": "Duplicate Tailwind/OKLCH base styles defining theme variables for UI components.",
+  "frontend/src/main.tsx": "React entry point configuring QueryClient, InternetIdentityProvider, and rendering App.",
+  "frontend/tailwind.config.js": "Tailwind configuration extending colors, animations, and container settings with OKLCH tokens.",
+  "project_state.json": "Tracks project state, features, and requests related to semantic HTML restructuring."
+}

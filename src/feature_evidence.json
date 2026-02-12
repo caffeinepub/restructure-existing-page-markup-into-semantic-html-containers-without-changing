@@ -1,0 +1,23 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-refactor-the-existing-page-markup-to-use-a-fully-semantic-layout-by-placing-the-current-content-into-appropriate-html5-semantic-containers-at-minimum-header-main-and-footer-while-keeping-all-existing-content-completely-unchanged",
+      "featureTitle": "Refactor the existing page markup to use a fully semantic layout by placing the current content into appropriate HTML5 semantic containers (at minimum: <header>, <main>, and <footer>), while keeping all existing content completely unchanged.",
+      "files": [
+        "frontend/index.html"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

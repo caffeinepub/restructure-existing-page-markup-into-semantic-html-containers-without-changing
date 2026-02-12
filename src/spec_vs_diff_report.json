@@ -1,0 +1,82 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-12T07:33:07.440Z",
+  "summary": "The diff adds an entirely new app skeleton (React + Tailwind + auth/query hooks + empty backend actor) and introduces new page content. It does not demonstrate a refactor of an existing page’s markup while preserving all original content/attributes/behavior as required.",
+  "missing_requirements": [
+    {
+      "id": "REQ-1",
+      "requirement": "Refactor the existing page markup into semantic HTML5 containers (at minimum <header>, <main>, <footer>) while keeping all existing content completely unchanged (text, attributes, links/URLs, form fields, inline styles), preserving behavior/hooks, and maintaining content order.",
+      "reason": "The diff shows only newly added files with newly written markup/content (e.g., new headings, paragraphs, footer attribution link) rather than restructuring an existing page while preserving its exact content, attributes, and behavior. No modified file shows an in-place semantic-wrapper refactor of existing markup.",
+      "evidence": [
+        "frontend/src/App.tsx (new content: \"Semantic HTML Structure\", \"Welcome\", new descriptive paragraph, new caffeine.ai footer link)",
+        "MODIFIED FILES: none"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Introduced a new React App component with new user-visible copy/content rather than preserving existing page content.",
+      "reason": "BuildRequest prohibits changing/adding/removing any content; the diff adds new headings/paragraphs/footer attribution and dynamic year.",
+      "evidence": [
+        "frontend/src/App.tsx"
+      ]
+    },
+    {
+      "description": "Added backend canister stub (Motoko actor).",
+      "reason": "Backend work and new endpoints/features are non-goals; request was only semantic HTML restructuring.",
+      "evidence": [
+        "backend/main.mo"
+      ]
+    },
+    {
+      "description": "Added Internet Identity authentication context/provider implementation.",
+      "reason": "Authentication is a new app feature/behavior not requested by the semantic markup refactor.",
+      "evidence": [
+        "frontend/src/hooks/useInternetIdentity.ts",
+        "frontend/src/main.tsx"
+      ]
+    },
+    {
+      "description": "Added React Query integration and actor/query hooks.",
+      "reason": "Data fetching/query infrastructure is not part of the requested semantic HTML-only refactor and changes behavior/architecture scope.",
+      "evidence": [
+        "frontend/src/hooks/useActor.ts",
+        "frontend/src/hooks/useQueries.ts",
+        "frontend/src/main.tsx"
+      ]
+    },
+    {
+      "description": "Added/changed global styling system via Tailwind CSS directives, design tokens, and Tailwind configuration.",
+      "reason": "Request explicitly forbids styling changes; adding Tailwind base/components/utilities and extensive CSS variables/configuration goes beyond semantic restructuring.",
+      "evidence": [
+        "frontend/src/index.css",
+        "frontend/index.css",
+        "frontend/tailwind.config.js"
+      ]
+    },
+    {
+      "description": "Changed/introduced HTML document title text.",
+      "reason": "User-visible text/content changes are disallowed; the diff sets a specific title string.",
+      "evidence": [
+        "frontend/index.html"
+      ]
+    }
+  ],
+  "confidence": 0.83,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/hooks/useQueries.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}

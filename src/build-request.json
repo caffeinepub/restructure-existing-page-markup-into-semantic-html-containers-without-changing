@@ -1,0 +1,51 @@
+{
+  "kind": "build_request",
+  "title": "Restructure existing page markup into semantic HTML containers without changing content",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Refactor the existing page markup to use a fully semantic layout by placing the current content into appropriate HTML5 semantic containers (at minimum: <header>, <main>, and <footer>), while keeping all existing content completely unchanged.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "A) Generate the fully restructured HTML with every section placed in the correct semantic container (no content touched)"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The resulting markup includes <header>, <main>, and <footer> elements and uses additional semantic elements where appropriate (e.g., <nav>, <section>, <article>, <aside>) without changing the content.",
+        "All user-visible text remains identical (no edits, no rewording, no additions/removals).",
+        "All existing attributes (including id, class, data-*, aria-*), links/URLs, form fields, and inline styles (if any) are preserved exactly.",
+        "All existing scripts and functional hooks (event handlers, element IDs used by JS, form names) continue to work identically after the restructure.",
+        "Content order remains the same as before; changes are limited to adding/moving semantic wrapper containers and grouping elements semantically."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not change, add, or remove any content (text, images, links, form fields).",
+    "Do not change styling (class names, inline styles) or behavior; only restructure DOM using semantic containers.",
+    "Do not modify immutable frontend paths listed in SYSTEM_CONTEXT; compose around them if needed."
+  ],
+  "nonGoals": [
+    "Creating new pages, routes, or app features beyond semantic restructuring.",
+    "Updating copy, branding, colors, typography, spacing, or any visual redesign.",
+    "Changing backend logic or adding backend endpoints."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  },
+  "userProfileUpdate": {
+    "goalsToAdd": [],
+    "goalsToRemove": [],
+    "preferencesToAdd": [],
+    "preferencesToRemove": [],
+    "miscToAdd": [],
+    "miscToRemove": [],
+    "fieldsToSet": {},
+    "fieldsToDelete": []
+  }
+}

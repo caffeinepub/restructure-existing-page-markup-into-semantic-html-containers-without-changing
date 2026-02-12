@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "Restructure an existing HTML page into a clean semantic layout using header, main, and footer containers while keeping all content unchanged.",
+  "architectural_notes": [
+    "Maintain all existing content unchanged while reorganizing markup into semantic containers (header, main, footer)."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-refactor-the-existing-page-markup-to-use-a-fully-semantic-layout-by-placing-the-current-content-into-appropriate-html5-semantic-containers-at-minimum-header-main-and-footer-while-keeping-all-existing-content-completely-unchanged",
+      "title": "Refactor the existing page markup to use a fully semantic layout by placing the current content into appropriate HTML5 semantic containers (at minimum: <header>, <main>, and <footer>), while keeping all existing content completely unchanged.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Generate fully restructured HTML using semantic containers (header/main/footer) with no content changes",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "projectName": "Restructure existing page markup into semantic HTML containers without changing content",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
